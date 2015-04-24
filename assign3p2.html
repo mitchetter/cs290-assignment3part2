@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Assignment 3 part 2</title>
+	<script src='JSandAjax.js'></script>
+</head>
+<body>
+	<section>
+		<div>
+			<h4>Number of Pages Requested</h4>
+			<select id='pages_req'>
+				<option value='1'>1</option>
+				<option value='2'>2</option>
+				<option value='3'>3</option>
+				<option value='4'>4</option>
+				<option value='5'>5</option>
+			</select>
+		</div>
+		<h4>Languages Requested</h4>
+		<div>
+			<label>JSON</label>
+			<input type="checkbox" name="json_req">
+		</div>
+		<div>
+			<label>Python</label>
+			<input type="checkbox" name="python_req">
+		</div>
+		<div>
+			<label>SQL</label>
+			<input type="checkbox" name="sql_req">
+		</div>
+		<div>
+			<label>JavaScript</label>
+			<input type="checkbox" name="js_req">
+		</div>
+		<div>
+			<input type="button" value="Search" onclick="makeRequest()">
+		</div>
+	</section>
+	<section style="float:left;">
+		<h3>Search Results</h3>
+		<ul id="results">
+		</ul>
+	</section>
+	<section style="float:right;">
+		<h3>Favorites</h3>
+		<ul id="favs">
+		</ul>
+	</section>
+</body>
+</html>
